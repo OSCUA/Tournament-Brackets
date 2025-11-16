@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Tournament Brackets — Brackets for All Formats</title>
+  <meta name="description" content="Single & Double Elimination, Round Robin, and Swiss tournaments with a friendly UI." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#">Tournament Brackets</a>
+      <nav class="nav">
+        <a href="#features">Features</a>
+        <a href="#formats">Formats</a>
+        <a href="#screenshots">Screenshots</a>
+        <a href="#usage">Usage</a>
+        <a href="#download">Download</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+      <button id="themeToggle" class="theme-toggle" aria-label="Toggle theme">🌓</button>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container">
+      <h1>Run tournaments like a pro.</h1>
+      <p>Single & Double Elimination, Round Robin, and Swiss — all in a polished, easy-to-use application.</p>
+      <div class="hero-actions">
+        <a class="btn primary" href="#download">Get the app</a>
+        <a class="btn" href="#usage">Read the guide</a>
+        <a class="btn ghost" target="_blank" rel="noopener" href="https://github.com/YourUser/YourRepo">View on GitHub</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="features" class="section">
+    <div class="container">
+      <h2>Key features</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Multiple formats</h3>
+          <p>Run Single Elimination, Double Elimination, Round Robin, or Swiss with configurable rounds.</p>
+        </div>
+        <div class="card">
+          <h3>Simple UI</h3>
+          <p>Add players, generate rounds, record results, and view standings in one place.</p>
+        </div>
+        <div class="card">
+          <h3>Byes handled</h3>
+          <p>Odd player counts? Byes are automatically assigned and scored correctly.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="formats" class="section alt">
+    <div class="container">
+      <h2>Supported formats</h2>
+      <div class="formats">
+        <div class="format">
+          <h3>Single elimination</h3>
+          <p>Players are eliminated after one loss. Progression continues until one champion remains.</p>
+        </div>
+        <div class="format">
+          <h3>Double elimination</h3>
+          <p>Winners and losers brackets converge in a grand final, with reset support.</p>
+        </div>
+        <div class="format">
+          <h3>Round robin</h3>
+          <p>Every player faces every other player. Standings by points, wins, and ties.</p>
+        </div>
+        <div class="format">
+          <h3>Swiss</h3>
+          <p>Score-group pairings that avoid repeats, with configurable round count and bye fairness.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="screenshots" class="section">
+    <div class="container">
+      <h2>Screenshots</h2>
+      <p>Drop your images in <code>docs/assets/</code> and update the paths below.</p>
+      <div class="screenshots">
+        <img src="assets/screenshot-1.png" alt="Main window" />
+        <img src="assets/screenshot-2.png" alt="Record result popup" />
+        <img src="assets/screenshot-3.png" alt="Standings view" />
+      </div>
+    </div>
+  </section>
+
+  <section id="usage" class="section alt">
+    <div class="container">
+      <h2>How to use</h2>
+
+      <div class="steps">
+        <div class="step">
+          <h3>1. Install Python</h3>
+          <p>Use Python 3.11 or 3.12 for best compatibility.</p>
+        </div>
+        <div class="step">
+          <h3>2. Clone the repository</h3>
+          <div class="cmd">
+            <code id="cloneCmd">git clone https://github.com/YourUser/YourRepo.git</code>
+            <button class="copy" data-target="cloneCmd">Copy</button>
+          </div>
+        </div>
+        <div class="step">
+          <h3>3. Create a virtual environment</h3>
+          <div class="cmd">
+            <code id="venvCmd">python -m venv venv && venv\Scripts\activate</code>
+            <button class="copy" data-target="venvCmd">Copy</button>
+          </div>
+        </div>
+        <div class="step">
+          <h3>4. Install dependencies</h3>
+          <p>Choose a GUI flavor:</p>
+          <ul>
+            <li><strong>Tkinter:</strong> Built-in, no extra install.</li>
+            <li><strong>Kivy (not tested):</strong> <code id="qtCmd">pip install kivy</code> <button class="copy" data-target="qtCmd">Copy</button></li>
+          </ul>
+        </div>
+        <div class="step">
+          <h3>5. Run the app</h3>
+          <p>Pick the version you added (e.g., Tkinter or Kivy):</p>
+          <div class="cmd">
+            <code id="runCmd">python main.py</code>
+            <button class="copy" data-target="runCmd">Copy</button>
+            <code id="runCmd">python kivy.py</code>
+            <button class="copy" data-target="runCmd">Copy</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="note">
+        <p>If you prefer Kivy, use Python 3.11–3.12 and install:</p>
+        <pre><code>pip install "kivy[base]" kivy_deps.sdl2 kivy_deps.glew kivy_deps.gstreamer</code></pre>
+      </div>
+    </div>
+  </section>
+
+  <section id="download" class="section">
+    <div class="container">
+      <h2>Download</h2>
+      <p>Grab the latest release or clone the repository.</p>
+      <div class="download-actions">
+        <a class="btn" target="_blank" rel="noopener" href="https://github.com/OSCUA/Tournament-Brackets">GitHub repository</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="faq" class="section alt">
+    <div class="container">
+      <h2>FAQ</h2>
+      <details>
+        <summary>Which tournament formats are supported?</summary>
+        <p>Single Elimination, Double Elimination, Round Robin, and Swiss.</p>
+      </details>
+      <details>
+        <summary>What Python version should I use?</summary>
+        <p>Use Python 3.11 or 3.12. For Kivy builds, newer versions may not have wheels available yet.</p>
+      </details>
+      <details>
+        <summary>Can I export or import tournaments?</summary>
+        <p>Planned JSON export/import is on the roadmap. Track progress in the repo’s issues.</p>
+      </details>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Tournament Brackets • Built for any pro-grade tournament.</p>
+      <p><a target="_blank" rel="noopener" href="https://github.com/OSCUA/Tournament-Brackets">GitHub</a></p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
